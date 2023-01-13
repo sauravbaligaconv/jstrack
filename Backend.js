@@ -20,7 +20,7 @@ app.use(cors(corsOpts));
 const IP = require('ip');
 
 app.get('/', (req, res) => {
-    #const ipAddress = IP.address();
+    //const ipAddress = IP.address();
     const ipAddress = req.connection.remoteAddress;
     res.json({ ipAddress: ipAddress });
 });
